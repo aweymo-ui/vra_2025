@@ -9,7 +9,7 @@ gallery: true
 
 {% include gallery-figure.html img="vra_23.jpeg" alt="Page containing seven archival photos of people in outdoor wear on a trip through the woods." caption="Page from the Tacoma Mountaineers 1911 scrapbook, courtesy Tacoma Northwest Room." %}
 
-The second tool was prompted by an archivist digitizing scrapbooks with our Zeutschel overhead scanner and wondering if we could batch extract individual photographs from the full page images. The image processing here is done using Scikit-Image, a collection of algorithms that can be implemented in different ways depending on the type of content you need to mask and extract. 
+The second tool was prompted by an archivist digitizing scrapbooks with our Zeutschel overhead scanner and wondering if we could batch extract individual photographs from the full page images. The image processing here is done using [Scikit-Image](https://scikit-image.org/), a collection of algorithms that can be implemented in different ways depending on the type of content you need to mask and extract. 
 
 {% include gallery-figure.html img="vra_05.jpg" alt="Screenshot of Python code, including initial imports, customizable parameters and image preprocessing." caption="image_extractor Python code, including initial imports, customizable parameters and image preprocessing" %}
 

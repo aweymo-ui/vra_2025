@@ -12,7 +12,7 @@ My name is Andrew Weymouth, the Digital Initiatives Librarian for University of 
     <p class="symbol">&#10042;</p>
 </div>
 
-The team I’m a part of in the Center for Digital Initiatives and Learning consists of three other people and a small group of student workers, collaborating with the five members of our Special Collections department to create and maintain the 150 digital collections on our main institutional repository as well as the many other, more customized fellowship projects. I also develop digital tools and workflows to enhance transcription, tagging, and image processing, in order to make the university’s audio, text, and visual resources more discoverable for researchers.
+The team I’m a part of in the [Center for Digital Initiatives](https://cdil.lib.uidaho.edu/) and Learning consists of three other people and a small group of student workers, collaborating with the five members of our [Special Collections](https://www.lib.uidaho.edu/special-collections/) department to create and maintain the [150 digital collections](https://www.lib.uidaho.edu/digital/) on our main institutional repository as well as the many other, more customized fellowship projects. I also develop digital tools and workflows to enhance transcription, tagging, and image processing, in order to make the university’s audio, text, and visual resources more discoverable for researchers.
 
 {% include gallery-figure.html img="vra_01.gif" alt="Screen capture of a patron scrolling through the U of I digital collections, going from the main browse page to a collection and then an item level resource." caption="The U of I Digital Collections, moving from the main browse page to a collection and down to the item level" %}
 
