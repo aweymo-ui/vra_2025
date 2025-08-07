@@ -4,11 +4,11 @@ layout: page
 gallery: true
 ---
 
-{% include gallery-figure.html img="banner.png" alt="Banner image with the title of this presentation, an image of the author and an image of a polygon highlighting a topographical map." caption="Creating Geographic Animation Using Google Earth Studio" title="Creating Geographic Animation Using Google Earth Studio" %}
+{% include gallery-figure.html img="banner.png" alt="Banner image with the title of this presentation, an image of the author and various materials from an archeological dig, including bottle parts, a pencil and part of a toy." caption="Image Extraction for Overhead Scans and Archeological Photographs" title="Image Extraction for Overhead Scans and Archeological Photographs" %}
 
-- [slide deck](https://indd.adobe.com/view/a5057f82-11b1-4ad7-bd13-4412bf2e656e){:target="_blank" rel="noopener"}
+- [slide deck](https://indd.adobe.com/view/c39e4ac9-c3c2-4a88-bc90-517c88724490){:target="_blank" rel="noopener"}
 
-Presentation for the 2025 University of Idaho Library Tech Talk Series.
+Presentation for the 2025 Visual Resources Association Conference.
 
 {% include toc.html %}
 

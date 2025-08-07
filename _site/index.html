@@ -4,11 +4,11 @@
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Home | Creating Geographic Animation Using Google Earth Studio</title>
-<meta name="description" content="Presentation for the 2025 University of Idaho Library Tech Talk Series">
+<title>Home | Image Extraction for Overhead Scans and Archeological Photographs</title>
+<meta name="description" content="Presentation for the 2025 Visual Resources Association Conference">
 <meta name="keywords" content="">
 <meta name="author" content="Andrew Weymouth">
-<link rel="icon" type="image/png" href="http://localhost:4000/ges_geo_vis/favicon.png">
+<link rel="icon" type="image/png" href="http://localhost:4000/vra_2025/favicon.png">
 
 <!--
   _      __         __        __           ______               __     __     
@@ -21,23 +21,23 @@
 --> 
    
 <!-- Open Graph meta -->
-<meta property="og:title" content="Home | Creating Geographic Animation Using Google Earth Studio" />
+<meta property="og:title" content="Home | Image Extraction for Overhead Scans and Archeological Photographs" />
 <meta property="og:type" content="website" />
-<meta property="og:description" content="Presentation for the 2025 University of Idaho Library Tech Talk Series" />
-<meta property="og:image" content="http://localhost:4000/ges_geo_vis/images/banner.png" />
-<meta property="og:site_name" content="Creating Geographic Animation Using Google Earth Studio" />
-<meta property="og:url" content="http://localhost:4000/ges_geo_vis/" />
+<meta property="og:description" content="Presentation for the 2025 Visual Resources Association Conference" />
+<meta property="og:image" content="http://localhost:4000/vra_2025/images/banner.png" />
+<meta property="og:site_name" content="Image Extraction for Overhead Scans and Archeological Photographs" />
+<meta property="og:url" content="http://localhost:4000/vra_2025/" />
 <meta property="og:locale" content="en_US" />
 <!-- schema.org JSON-LD -->
-<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Home | Creating Geographic Animation Using Google Earth Studio", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Presentation for the 2025 University of Idaho Library Tech Talk Series", "image": "http://localhost:4000/ges_geo_vis/images/banner.png", "url":"http://localhost:4000/ges_geo_vis/" }</script>
+<script type="application/ld+json">{ "@context":"http://schema.org", "@type":"WebPage", "headline":"Home | Image Extraction for Overhead Scans and Archeological Photographs", "author": { "@type":"Person", "name":"Andrew Weymouth"}, "description":"Presentation for the 2025 Visual Resources Association Conference", "image": "http://localhost:4000/vra_2025/images/banner.png", "url":"http://localhost:4000/vra_2025/" }</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/ges_geo_vis/assets/lib/spotlight.min.css">
-<link rel="stylesheet" href="/ges_geo_vis/assets/lib/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="/ges_geo_vis/assets/css/styles.css">
+<link rel="stylesheet" href="/vra_2025/assets/lib/spotlight.min.css">
+<link rel="stylesheet" href="/vra_2025/assets/lib/bootstrap.min.css" type="text/css">
+<link rel="stylesheet" href="/vra_2025/assets/css/styles.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
 
 
-<!-- Last build date: 2025-07-31 -->
+<!-- Last build date: 2025-08-07 -->
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -56,9 +56,9 @@
     <header>
     <nav class="navbar navbar-light pb-lg-0 border-bottom" style="background-color: #F0F8FF;">
     <div class="container">
-        <h1 class="navbar-brand" style="white-space: normal;"><a href="/ges_geo_vis/">
+        <h1 class="navbar-brand" style="white-space: normal;"><a href="/vra_2025/">
             
-            Creating Geographic Animation Using Google Earth Studio
+            Image Extraction for Overhead Scans and Archeological Photographs
         </a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -68,7 +68,7 @@
             <ul class="navbar-nav nav-tabs justify-content-end">
             
                 <li class="nav-item">
-                    <a class="nav-link p-3 h-100" href="/ges_geo_vis/content/1_intro.html">
+                    <a class="nav-link p-3 h-100" href="/vra_2025/content/1_intro.html">
                         
                             Introduction
                         
@@ -76,17 +76,25 @@
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link p-3 h-100" href="/ges_geo_vis/content/2_start.html">
+                    <a class="nav-link p-3 h-100" href="/vra_2025/content/2_ed.html">
                         
-                            Getting Started
+                            edge_detector tool
                         
                     </a>
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link p-3 h-100" href="/ges_geo_vis/content/3_ges.html">
+                    <a class="nav-link p-3 h-100" href="/vra_2025/content/3_ie.html">
                         
-                            Google Earth Studio
+                            image_extractor tool
+                        
+                    </a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link p-3 h-100" href="/vra_2025/content/4_findings.html">
+                        
+                            Findings
                         
                     </a>
                 </li>
@@ -102,13 +110,13 @@
       
       <div class="container my-4">
 <figure class="figure d-block text-center p-3">
-    <a class="spotlight" href="/ges_geo_vis/images/banner.png" title="Creating Geographic Animation Using Google Earth Studio"><img data-src="/ges_geo_vis/images/banner.png" alt="Banner image with the title of this presentation, an image of the author and an image of a polygon highlighting a topographical map." class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Creating Geographic Animation Using Google Earth Studio</figcaption></figure>
+    <a class="spotlight" href="/vra_2025/images/banner.png" title="Image Extraction for Overhead Scans and Archeological Photographs"><img data-src="/vra_2025/images/banner.png" alt="Banner image with the title of this presentation, an image of the author and various materials from an archeological dig, including bottle parts, a pencil and part of a toy." class="figure-img img-fluid lazyload" /></a><figcaption class="figure-caption">Image Extraction for Overhead Scans and Archeological Photographs</figcaption></figure>
 
 <ul>
-  <li><a href="https://indd.adobe.com/view/a5057f82-11b1-4ad7-bd13-4412bf2e656e" target="_blank" rel="noopener">slide deck</a></li>
+  <li><a href="https://indd.adobe.com/view/c39e4ac9-c3c2-4a88-bc90-517c88724490" target="_blank" rel="noopener">slide deck</a></li>
 </ul>
 
-<p>Presentation for the 2025 University of Idaho Library Tech Talk Series.</p>
+<p>Presentation for the 2025 Visual Resources Association Conference.</p>
 
 <div class="row justify-content-center">
     <div class="m-3 col-md-8">
@@ -117,11 +125,13 @@
                 <h2 class="h4 card-title">Contents:</h2>
                 <ul>
                     
-                    <li><a href="/ges_geo_vis/content/1_intro.html">Introduction</a> </li>
+                    <li><a href="/vra_2025/content/1_intro.html">Introduction</a> </li>
                     
-                    <li><a href="/ges_geo_vis/content/2_start.html">Getting Started</a> </li>
+                    <li><a href="/vra_2025/content/2_ed.html">edge_detector tool</a> </li>
                     
-                    <li><a href="/ges_geo_vis/content/3_ges.html">Google Earth Studio</a> </li>
+                    <li><a href="/vra_2025/content/3_ie.html">image_extractor tool</a> </li>
+                    
+                    <li><a href="/vra_2025/content/4_findings.html">Findings</a> </li>
                     </ul>
             </div>
         </div>
@@ -130,7 +140,7 @@
 
 <hr />
 
-<p><strong>Content:</strong> CC BY-NC-ND 4.0 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a> 2025 (get <a href="https://github.com/aweymo-ui/ges_geo_vis" target="_blank" rel="noopener">source code</a>). <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"></a></p>
+<p><strong>Content:</strong> CC BY-NC-ND 4.0 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a> 2025 (get <a href="https://github.com/aweymo-ui/vra_2025" target="_blank" rel="noopener">source code</a>). <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"></a></p>
 <p><strong>Theme:</strong> Variation on <a href="https://github.com/evanwill/workshop-template-b" target="_blank" rel="noopener">workshop-template-b</a> by <a href="https://github.com/evanwill/" target="_blank" rel="noopener">evanwill</a></p>
 
 <div class="row">
@@ -138,10 +148,10 @@
     
     <div class="col-md text-center">
         <figure class="figure mx-3">
-            <a href="/ges_geo_vis/items/.html">
+            <a href="/vra_2025/items/.html">
                 <img class="figure-img img-fluid rounded lazyload" alt="" title="click to see item" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="" />
             </a>
-            <figcaption class="figure-caption text-center"><a href="/ges_geo_vis/items/.html"></a></figcaption>
+            <figcaption class="figure-caption text-center"><a href="/vra_2025/items/.html"></a></figcaption>
         </figure>
     </div>
 </div>
@@ -155,17 +165,19 @@
     <nav class="mt-3 mb-4">
       <ul class="nav nav-pills nav-fill">
         
-        <li class="nav-item"><a class="nav-link h3" href="/ges_geo_vis/content/1_intro.html">Introduction</a></li>
+        <li class="nav-item"><a class="nav-link h3" href="/vra_2025/content/1_intro.html">Introduction</a></li>
         
-        <li class="nav-item"><a class="nav-link h3" href="/ges_geo_vis/content/2_start.html">Getting Started</a></li>
+        <li class="nav-item"><a class="nav-link h3" href="/vra_2025/content/2_ed.html">edge_detector tool</a></li>
         
-        <li class="nav-item"><a class="nav-link h3" href="/ges_geo_vis/content/3_ges.html">Google Earth Studio</a></li>
+        <li class="nav-item"><a class="nav-link h3" href="/vra_2025/content/3_ie.html">image_extractor tool</a></li>
+        
+        <li class="nav-item"><a class="nav-link h3" href="/vra_2025/content/4_findings.html">Findings</a></li>
         
       </ul>
     </nav>
     <div class="row align-items-center pb-5">
         <div id="footer-title" class="col-md">
-          <a class="h5" href="/ges_geo_vis/">Creating Geographic Animation Using Google Earth Studio</a>
+          <a class="h5" href="/vra_2025/">Image Extraction for Overhead Scans and Archeological Photographs</a>
           <br>
           <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0, </a> 2025 <a href="https://github.com/aweymo-ui">Andrew Weymouth</a>
         </div>
@@ -174,7 +186,7 @@
           <script>
             function site_search() {
               var query = document.getElementById("site-search").value;
-              window.open("/ges_geo_vis/search/index.html?q=" + encodeURIComponent(query), "_self" );
+              window.open("/vra_2025/search/index.html?q=" + encodeURIComponent(query), "_self" );
             }
           </script>
           <form class="form-inline my-2 my-lg-0 float-end" role="search" id="search" onsubmit="site_search(); return false;">
@@ -192,12 +204,12 @@
 </footer>
 
     <!-- Bootstrap JS bundle -->
-<script src="/ges_geo_vis/assets/lib/bootstrap.bundle.min.js"></script>
+<script src="/vra_2025/assets/lib/bootstrap.bundle.min.js"></script>
 <!-- load other optional js -->
 
 
-<script src="/ges_geo_vis/assets/lib/lazysizes.min.js" async></script>
-<script src="/ges_geo_vis/assets/lib/spotlight.min.js" defer></script>
+<script src="/vra_2025/assets/lib/lazysizes.min.js" async></script>
+<script src="/vra_2025/assets/lib/spotlight.min.js" defer></script>
 <script>
     // When the user scrolls down from the top of the document, show the button
     window.onscroll = function () {

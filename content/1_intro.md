@@ -6,40 +6,28 @@ gallery: true
 
 <br>
 
-The process I’ll be discussing has its origins in realizing a fundamental lack of understanding of the project I’d been working on for months. After transcribing hours of oral history material, processing thousands of research papers, and combing through metadata to create a digital collection on a natural science archive, I began to recognize a critical gap. My inability to grasp the area where all of the research was conducted obscured both my understanding of the material and my connection to the people conducting the research. I also realized that if I was struggling with this understanding, patrons and researchers using this digital resource would likely also feel this disconnection.
+My name is Andrew Weymouth, the Digital Initiatives Librarian for University of Idaho and today I’ll be discussing two practical applications implementing computer vision that can facilitate processing large numbers of digital visual resources. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
 
-## Example Project
+The team I’m a part of in the Center for Digital Initiatives and Learning consists of three other people and a small group of student workers, collaborating with the five members of our Special Collections department to create and maintain the 150 digital collections on our main institutional repository as well as the many other, more customized fellowship projects. I also develop digital tools and workflows to enhance transcription, tagging, and image processing, in order to make the university’s audio, text, and visual resources more discoverable for researchers.
+
+{% include gallery-figure.html img="vra_01.gif" alt="Screen capture of a patron scrolling through the U of I digital collections, going from the main browse page to a collection and then an item level resource." caption="The U of I Digital Collections, moving from the main browse page to a collection and down to the item level" %}
+
+Both of the tools I’ll be speaking about today have their origins in finding practical solutions to repetitive, digital work that comes after the hands-on arranging, research, cataloguing and description work in the archive. Considering I work with technology quite a bit, I would broadly self identify as critical towards AI applications to cultural heritage work, which I think you’ll find reflective in the coding approach, where sets of algorithms and neural networks are implemented on guardrails within a programmatic workflow, to make results more scalable and reproducible.
 
 <br>
 
-Before we begin, I would like to share an example of a project where I felt this type of visualization added another layer of helpful context to the project I was working on. The Taylor Wilderness Research Station, nestled in central Idaho’s Frank Church-River of No Return Wilderness, has been a vital research hub since the University acquired it in 1970. Accessible only by plane or hiking, it supports wildlife surveys, range land monitoring, and climatology amid over two million acres of protected wilderness.
+## Definitions
 
-{% include gallery-figure.html img="geo_viz_oh_08.jpg" alt="The Dave Lewis Ranch, where the Taylor Wilderness Research Station would eventually be established, 1937." caption="The Dave Lewis Ranch, where the Taylor Wilderness Research Station would eventually be established, 1937." %}
+<br>
 
-A few years ago, the Center for Digital Inquiry and Learning (CDIL) was contacted by station managers to digitize at-risk scientific papers and internal documents. In a separate project, CDIL Fellowship recipient and PhD candidate Jack Kredell visited people involved in the station’s management and maintenance to uncover “often-ignored social and experiential content behind scientific pursuit.” The project, led by Devin Becker, Associate Dean of Research and Instruction, envisioned a collection combining these two resources. The goal was to provide access to all scientific research produced at the station, along with interpretive material to help visitors better understand its historic, human, and geographic context.
+It might be helpful to begin with some definitions of what resources these tools implement. Both tools are written in `Python`, a general purpose, readable programming language, and they are hosted in `GitHub`, a version controlled platform for hosting software development projects.
 
-The idea to map the oral history recordings began during a meeting where I brought a list of locations mentioned in the interviews. To identify these informal sites, I connected Google Earth to a monitor, and within minutes, Jack was guiding me through the 3D landscape and there was a bit of a spark as we were understanding the area in a more complete way. After discussing more complex programmatic solutions to link the recordings with geographic data, I decided to simplify the concept by creating a video combining these elements.
+{% include gallery-figure.html img="vra_07.png" alt="A visual analogy of the definitions, where large language models are within a sphere of neural networks within a sphere of machine learning, that is within a sphere of algorithms. The first three are yellow, indicating they are all trained, and the outer ring of algorithms is green, indicating it is not necessarily trained. There is a box of yellow and green spheres representing Python libraries and three green dots representing untrained, deterministic path utilities." width="75%" caption="Representation of algorithmic shared characteristics" %}
 
-{% include gallery-figure.html img="ges_geo_vis_28.jpg" alt="Six people and a dog outside a log cabin in a snowy forest setting. Five people are standing and one kneels, petting the dog. The group is casually dressed in plaid and solid-colored shirts, and one person is wearing a headband." caption="Arlow Lewis, the caretaker of Taylor Ranch for several years, far left with glasses. Kneeling on left is Jim Bennett, then a PhD student working on bighorn sheep. Carol Bennett is in the yellow top." %}
-
-I selected the oral history excerpts that I felt uniquely adept at providing a sense of the amount of time that it takes to navigate the area on foot and discussed locations that not only had a geographic scale but a chronological one. 
-
-<div class="symbol-container">
-    <p class="symbol">&#10042;</p>
-</div>
-
-In the first excerpt, wildlife researcher Dr. Maurice Hornocker recounts a four-day search for his colleague’s dog, Little Red. The emotional narrative demonstrates how far one could venture in the area before needing to come back to base. The multi-day structure of the story allowed me to experiment with time-of-day functionalities, another attribute you can manipulate in Google Earth Studio to visualize the rising and setting of the sun over days, months, or years. This adds a dynamic lighting component to the finished visualization and a more nuanced understanding of the environment they were navigating.
-
-{% include feature/video.html objectid="https://www.youtube.com/watch?v=EEFYBcwY4Bg&t=31s" %}
-
-In the second excerpt, Dr. Ed Krumpe describes the wilderness area’s history, beginning with modern landmarks, then smaller geographic features, and finally an Indigenous site excavated in 1983. The animation allowed me to use scale and movement to convey the remoteness and historical depth of the region as the recording begins with modern landmarks like the airstrip and the station, then moves to small geographic features like the neighboring creeks, scopes out to massive geological elements and finally to an ancient Indigenous site excavated by U of I archeological teams starting in 1983.
-
-{% include feature/video.html objectid="https://www.youtube.com/watch?v=eKYyentx7Nc&t=15s" %}
-
-In the Digital Scholarship and Open Strategies department, where I work as the Digital Initiatives Librarian, this experiment has been helpful in thinking about ways that we can marry oral history material with geographic visualizations. We are thinking about moving away from proprietary platforms like Google to have more programmatic approaches that will lead to more sustainable data, but this approach is excellent for more isolated research projects where geographic context is key to reader understanding. 
+The first tool I’ll discuss implements an artificial intelligence resource. At the moment, most of us would associate AI with `large language models` that are trained on text and reproduce human language styled output. In contrast, this tool is a more general `neural network`, computer architecture in which processors are interconnected in a manner suggestive of the human brain. The second tool utilizes `machine learning` which is a computational method that enables a computer to learn to perform tasks by analyzing a large dataset without being explicitly programmed, in that case to focus on pattern recognition. All of the other resources these tools utilize are `Python libraries`, wrappers that distribute any of the above models as well as `path utilities`, which are untrained, deterministic functions.
 
 <br>
