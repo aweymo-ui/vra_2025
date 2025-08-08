@@ -18,7 +18,9 @@ The team I’m a part of in the [Center for Digital Initiatives](https://cdil.li
 
 Both of the tools I’ll be speaking about today have their origins in finding practical solutions to repetitive, digital work that comes after the hands-on arranging, research, cataloguing and description work in the archive. Considering I work with technology quite a bit, I would broadly self identify as critical towards AI applications to cultural heritage work, which I think you’ll find reflective in the coding approach, where sets of algorithms and neural networks are implemented on guardrails within a programmatic workflow, to make results more scalable and reproducible.
 
-<br>
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 ## Definitions
 
@@ -29,5 +31,9 @@ It might be helpful to begin with some definitions of what resources these tools
 {% include gallery-figure.html img="vra_07.png" alt="A visual analogy of the definitions, where large language models are within a sphere of neural networks within a sphere of machine learning, that is within a sphere of algorithms. The first three are yellow, indicating they are all trained, and the outer ring of algorithms is green, indicating it is not necessarily trained. There is a box of yellow and green spheres representing Python libraries and three green dots representing untrained, deterministic path utilities." width="75%" caption="Representation of algorithmic shared characteristics" %}
 
 The first tool I’ll discuss implements an artificial intelligence resource. At the moment, most of us would associate AI with `large language models` that are trained on text and reproduce human language styled output. In contrast, this tool is a more general `neural network`, computer architecture in which processors are interconnected in a manner suggestive of the human brain. The second tool utilizes `machine learning` which is a computational method that enables a computer to learn to perform tasks by analyzing a large dataset without being explicitly programmed, in that case to focus on pattern recognition. All of the other resources these tools utilize are `Python libraries`, wrappers that distribute any of the above models as well as `path utilities`, which are untrained, deterministic functions.
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 <br>

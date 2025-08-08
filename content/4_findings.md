@@ -10,17 +10,35 @@ gallery: true
 
 Despite the Edge Detection tool working with much more complex materials than the Image Extraction tool, the results are much more accurate. I believe this is due to the model being trained to identify retail objects at close range, with fairly blank backgrounds on newer cameras –  which just so happens to be very close to the same conditions of archeological context photos.
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 {% include gallery-figure.html img="vra_19.png" alt="Card displaying the before and after of two unsuccessful examples -- one where the ruler was not removed from the photo and one where an artifact containing two objects was not fully rendered." caption="edge_detector unsuccessful examples" %}
 
 On the 24 objects I tested with this tool, including some tricky, nearly transparent glass items, the tool only produced three minor inaccuracies: a very slight shadow beside a glass shard, the ruler next to this pencil, possibly due to proximity and the text being lifted from a label you can view on the banner for this presentation. 
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
 
 {% include gallery-figure.html img="vra_20.png" alt="Card displaying the before and after of a successful examples -- where seven images are pulled from the original scan, although there are still minor inaccuracies around the margins of the photographs." caption="image_extractor successful example" %}
 
 While the Image Extraction tool is simply identifying rectangles within an image, the action is complicated with variable margins, paper backing color, overlapping or connected images as well as patterns on the actual scrapbook paper. On a scrapbook with a plain background and fairly straight somewhat evenly spaced photos, it identified and correctly extracted 25 of the 26 photos, although there are still minor inaccuracies around the margins of the photographs -- which is something you can adjust for manually in the parameters section mentioned earlier.
 
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
 {% include gallery-figure.html img="vra_21.png" alt="Card displaying two examples of pages that the tool has difficulty with -- one featuring heavily skewed photographs on backing paper featuring designs and another where there are varying background colors and the edges of photographs are cut off." caption="image_extractor least successful examples" %}
 
-On a scrapbook containing the above complications, the tool only identified and extracted 48 out of the 56 total items. That said, the tool is still certainly a work in progress and you can follow (and suggest) improvements on the GitHub public repository. 
+On a scrapbook containing the above complications, the tool only identified and extracted 48 out of the 56 total items. 
+
+<div class="symbol-container">
+    <p class="symbol">&#10042;</p>
+</div>
+
+That said, the tool is still certainly a work in progress and you can follow (and suggest) improvements on the GitHub public repository. 
 
 <br>
 
