@@ -8,7 +8,7 @@ gallery: true
 
 {% include gallery-figure.html img="vra_18.png" alt="Card displaying the before and after of an original archeological flint and an expanded version of the extracted image." caption="edge_detector successful applications" %}
 
-Despite the Edge Detection tool working with much more complex materials than the Image Extraction tool, the results are much more accurate. I believe this is due to the model being trained to identify retail objects at close range, with fairly blank backgrounds on newer cameras –  which just so happens to be very close to the same conditions of archeological context photos.
+Despite the Edge Detection tool working with seemingly more complex materials in archeological items with intricate edges, while the Image Extraction tool is generally working with rectangles, the latter is much less accurate. I think this is due to coincidental similarities of archeological photographs and the commercial photography that IS-NET was developed for. Both use fairly new cameras at close range and identify and extract a single, principle object in each image. The model is extensively trained because, unsurprisingly, there is incredible economic interest in streamlining the digital processing of commercial products and it just happens to overlap with this academic and preservation oriented discipline.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -24,7 +24,7 @@ On the 24 objects I tested with this tool, including some tricky, nearly transpa
 
 {% include gallery-figure.html img="vra_20.png" alt="Card displaying the before and after of a successful examples -- where seven images are pulled from the original scan, although there are still minor inaccuracies around the margins of the photographs." caption="image_extractor successful example" %}
 
-While the Image Extraction tool is simply identifying rectangles within an image, the action is complicated with variable margins, paper backing color, overlapping or connected images as well as patterns on the actual scrapbook paper. On a scrapbook with a plain background and fairly straight somewhat evenly spaced photos, it identified and correctly extracted 25 of the 26 photos, although there are still minor inaccuracies around the margins of the photographs -- which is something you can adjust for manually in the parameters section mentioned earlier.
+In this example with a plain background and fairly straight, somewhat evenly spaced photos, it identified and correctly extracted 25 of the 26 images, although there are still minor inaccuracies around the margins of the photographs, not fully rotating the images to 90 degree angles.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -32,7 +32,11 @@ While the Image Extraction tool is simply identifying rectangles within an image
 
 {% include gallery-figure.html img="vra_21.png" alt="Card displaying two examples of pages that the tool has difficulty with -- one featuring heavily skewed photographs on backing paper featuring designs and another where there are varying background colors and the edges of photographs are cut off." caption="image_extractor least successful examples" %}
 
-On a scrapbook containing the above complications, the tool only identified and extracted 48 out of the 56 total items. 
+In these two examples where photographs within the scrapbook page are skewed, overlapping, touching the borders of the full image, on paper containing designs or containing multiple background colors, the success rate of extraction was around 73 percent. At that level of accuracy, you might be better off approaching these projects manually. 
+
+Despite seeming more geometrically straight forward, extracting photographs within scrapbooks involves a deceptive amount of variance. The shapes of photographs may be rectangular, circular or with scalloped edges. The background paper may be white, beige or black. Additionally, if a photograph is extracted successfully at a right angle, the image itself may be skewed within the border. All of this, along with the complication of identifying multiple objects, which allows for the possibility of false positives in the form of noise within the page, made this a more complicated task than I would have assumed at the outset.
+
+It’s no wonder the edge detector, at a slim 45 lines of code and built around a single, extensively trained model, performs more accurately. The image extractor is twice as long and relies on multiple machine learning libraries to resolve the many potential conflicts which may or may not be involved in it's task.
 
 <br>
 
@@ -42,7 +46,11 @@ On a scrapbook containing the above complications, the tool only identified and 
 
 <br>
 
-That said, the tool is still certainly a work in progress and you can follow (and suggest) improvements on the GitHub public repository. 
+## Conclusion
+
+<br>
+
+My biggest take away from working on these tools is to seek out models working in parallel disciplines which may be much more well funded than the archives. I "developed" these tools so far as I implemented an infrastructure for different machine learning and neural network models to produce outputs in the format that best serves our preservation needs at U of I, but the development of those models took so much more time and technical expertise than I will ever have as a librarian. That said, if we can identify these these parallel applications in better funded commercial spaces that have analogues to our materials, we can leverage them to create open source, scalable tools for digital processing and increase the efficiency and accuracy of our archival practices.
 
 <br>
 

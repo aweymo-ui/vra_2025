@@ -10,7 +10,7 @@ The first tool was suggested by Evan Williamson, Digital Infrastructure Libraria
 
 {% include gallery-figure.html img="vra_12.png" alt="Panel from slide show of examples of archeological context photos with plastic bottles, parts of a toy, a shard of glass and a flint." caption="Examples of archeological context photos where we needed to extract the object from it's background" %}
 
-All of these projects were controlled context photographs of the object beside a ruler, possibly a color swatch, with varying backgrounds and lighting setups. The idea was to identify and extract the objects and, since different fellowship collaborators wanted these objects to be reproduced with both white and black backgrounds, we thought providing both of these options as well as a PNG file with a transparent background would work best. 
+All of these projects were controlled context photographs of the object beside a ruler, possibly a color swatch, with varying backgrounds and lighting setups. The idea was to identify and extract the objects and, since different fellowship collaborators wanted these objects to be reproduced with both white and black backgrounds, we thought providing both of these options as well as a PNG file with a transparent background would be optimal. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -54,8 +54,6 @@ The tool implements a neural network called IS-Net, originally developed for a p
 There are a few iterations that can be implemented under the greater [rembg](https://github.com/danielgatis/rembg) (remove background) library. At first, I was using the original u2net model, but found that the isnet-general-use model is more accurate and produces finer lines around the object, if a little slower to process.
 
 <br>
-
-In both tools you’ll notice I have a fairly `Python for Dummies` approach to structure, with original images being dropped into folder A, transparent backed PNGs into B, white backgrounds into C and black into D. After cloning this repository in GitHub, you can just follow the steps outlined in the setup.md file for either Mac or Windows devices to use these scripts. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>

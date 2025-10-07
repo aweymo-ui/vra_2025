@@ -43,9 +43,7 @@ _Find the full script [here](https://github.com/Scholarly-Projects/image_extract
 
 <br>
 
-In this script, I am using Scikit’s io and color to preprocess images, making them easier to identify. Then this uses their morphology, closing and remove_small_objects to reduce noise, identify the correct shapes within the image to extract and then fill in the holes within the objects if anything is missing with the original visual resource data. 
-
-The design of this code is a little different than the previous tool, with simple, `human readable parameters` you can adjust depending on the general size of the photos in their collection, the number of photos within an image and the amount of margin they would like their photos to have around the photos.
+The design of this code is a little different than the previous tool, with simple, `human readable parameters` you can adjust depending on the general size of the photos in their collection, the number of photos within an image and the amount of margin around those images. The code identifies each photograph within the image placed in the A folder and generates a new derivative in the B folder where they are given sequential file names based on the parent item. The code is currently set up to give sequential files names by the position of each photograph in a clockwise rotation, but this can be configured to whatever you find intuitive.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
