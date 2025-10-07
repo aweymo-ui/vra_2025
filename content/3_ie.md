@@ -15,7 +15,33 @@ The second tool was prompted by an archivist digitizing scrapbooks with our Zeut
     <p class="symbol">&#10042;</p>
 </div>
 
-{% include gallery-figure.html img="vra_05.jpg" alt="Screenshot of Python code, including initial imports, customizable parameters and image preprocessing." caption="image_extractor Python code, including initial imports, customizable parameters and image preprocessing" %}
+<br>
+
+## image_extractor tool code snippet
+
+<br>
+
+- **from skimage import io, color, filters, measure, morphology, util**: image reading, gray scale conversion for preprocessing, region analysis and labeling
+- **from skimage.morphology import binary_closing, remove_small_objects**: “closing” object edges and removing noise
+- **from scipy.ndimage import binary_fill_holes**: “fill” interior holes in identified objects
+- **import numpy as np**: replace Python loops with array operations for speed
+- **import os**: file and directory operations and path manipulation
+- **from pathlib import Path**: cleaning syntax for path manipulations
+- **import time**: performance logging
+- **from PIL import Image**: converting to final image format
+- **Parameters**:
+    - **min_long_edge** = 300
+    - **max_long_edge** = 1000
+    - **max_photos** = 10max_photos
+<br>
+
+...
+
+<br>
+
+_Find the full script [here](https://github.com/Scholarly-Projects/image_extraction)_
+
+<br>
 
 In this script, I am using Scikit’s io and color to preprocess images, making them easier to identify. Then this uses their morphology, closing and remove_small_objects to reduce noise, identify the correct shapes within the image to extract and then fill in the holes within the objects if anything is missing with the original visual resource data. 
 

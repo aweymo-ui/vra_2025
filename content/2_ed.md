@@ -16,7 +16,32 @@ All of these projects were controlled context photographs of the object beside a
     <p class="symbol">&#10042;</p>
 </div>
 
-{% include gallery-figure.html img="vra_04.png" alt="Screenshot of Visual Studio Code interface of Python Script." caption="edge_detector Python script with explanation of import functions" %}
+<br>
+
+## edge_detector tool code snippet
+
+<br>
+
+- **from pathlib import Path**: handling directory and file paths
+- **from rembg import remove, new_session**: third party library accessing ISNET computer vision
+- **from PIL import Image**: pillow library for opening, editing and saving project
+- **input_folder = Path(‘A’)**: original image file containing object that needs extracting
+- **transparent_folder = Path(‘B’)**: extracted object with transparent background (PNG)
+- **white_folder = Path(‘C’)**: white background (JPG)
+- **black_folder = Path(‘D’)**: black background (JPG)
+- **for folder in [transparent_folder, white_folder, black_folder]**
+    - **folder.mkdir(exist_ok=True)**: checking that folders exist before processing
+- **session = new_session(model_name=”isnet-general-use”)**: engage in new session with model
+- **for img_path in input_folder.glob**:
+    - **if not img_path.suffix.lower() in [‘.jpg’, ‘.jpeg’, ‘.png’, ‘.tiff’]**:
+    - **continue**: skip unsupported image file types in A folder
+    - **input_image = Image.open(img_path).convert(“RGB”)**: load image and convert to RGB
+...
+<br>
+
+Find the full script [here](https://github.com/Scholarly-Projects/edge_detector)_
+
+<br>
 
 The tool implements a neural network called IS-Net, originally developed for a paper titled [“Highly Accurate Dichotomous Image Segmentation”](http://arxiv.org/abs/2203.03041) by [Xuebin Qin](https://github.com/xuebinqin/DIS) and others in 2022. The model executes fine grain, binary foreground/background segmentation and it is often used for isolating retail objects for online marketplaces. The model is completely open access, requiring the user to open and close sessions within the Python script to use, but not requiring a monetary API key. 
 
@@ -28,13 +53,9 @@ The tool implements a neural network called IS-Net, originally developed for a p
 
 There are a few iterations that can be implemented under the greater [rembg](https://github.com/danielgatis/rembg) (remove background) library. At first, I was using the original u2net model, but found that the isnet-general-use model is more accurate and produces finer lines around the object, if a little slower to process.
 
-<div class="symbol-container">
-    <p class="symbol">&#10042;</p>
-</div>
+<br>
 
-{% include gallery-figure.html img="vra_03.png" alt="Screenshot of the setup.md file in Visual Studio Code, guiding users on how to use this tool after cloning from GitHub." caption="Beginning of setup.md guide and folder structure on the left" %}
-
-In both tools you’ll notice I have a fairly `Python for Dummies` approach to structure, with original images being dropped into folder A, transparent backed PNGs into B, white backgrounds into C and black into D. After cloning this repository in GitHub, you can just follow the steps outlined in the setup.md file for either Mac or Windows users to use these scripts. 
+In both tools you’ll notice I have a fairly `Python for Dummies` approach to structure, with original images being dropped into folder A, transparent backed PNGs into B, white backgrounds into C and black into D. After cloning this repository in GitHub, you can just follow the steps outlined in the setup.md file for either Mac or Windows devices to use these scripts. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>

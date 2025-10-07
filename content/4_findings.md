@@ -34,9 +34,13 @@ While the Image Extraction tool is simply identifying rectangles within an image
 
 On a scrapbook containing the above complications, the tool only identified and extracted 48 out of the 56 total items. 
 
+<br>
+
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
+
+<br>
 
 That said, the tool is still certainly a work in progress and you can follow (and suggest) improvements on the GitHub public repository. 
 
