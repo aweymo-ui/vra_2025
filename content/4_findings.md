@@ -16,15 +16,14 @@ Despite the Edge Detection tool working with seemingly more complex materials in
 
 {% include gallery-figure.html img="vra_19.png" alt="Card displaying the before and after of two unsuccessful examples -- one where the ruler was not removed from the photo and one where an artifact containing two objects was not fully rendered." caption="edge_detector unsuccessful examples" %}
 
-On the 24 objects I tested with this tool, including some tricky, nearly transparent glass items, the tool only produced three minor inaccuracies: a very slight shadow beside a glass shard, the ruler next to this pencil, possibly due to proximity and the text being lifted from a label you can view on the banner for this presentation. 
-
+On the 24 objects I tested with this tool, including some tricky, nearly transparent glass items, the tool only produced three minor inaccuracies: Even though the code specifies only finding a single, principle object in each image, the tool successfully extracts both shards of nearly transparent glass in the bottom image, but it also includes a very slight shadow, and the ruler next to this pencil is being lumped into the extracted image, possibly due to proximity. Additionally, there is one object you can see on the banner for this presentation that I will return to, where some of the text within the paper wrapper has been misidentified as it's black background.
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
 </div>
 
 {% include gallery-figure.html img="vra_20.png" alt="Card displaying the before and after of a successful examples -- where seven images are pulled from the original scan, although there are still minor inaccuracies around the margins of the photographs." caption="image_extractor successful example" %}
 
-In this example with a plain background and fairly straight, somewhat evenly spaced photos, it identified and correctly extracted 25 of the 26 images, although there are still minor inaccuracies around the margins of the photographs, not fully rotating the images to 90 degree angles.
+In this example of a scrapbook page with a plain background and fairly straight, somewhat evenly spaced photos, it identified and correctly extracted 25 of the 26 images, although there are still minor inaccuracies around the margins of the photographs, not fully rotating the images to 90 degree angles.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
@@ -50,7 +49,7 @@ It’s no wonder the edge detector, at a slim 45 lines of code and built around 
 
 <br>
 
-My biggest take away from working on these tools is to seek out models working in parallel disciplines which may be much more well funded than the archives. I "developed" these tools so far as I implemented an infrastructure for different machine learning and neural network models to produce outputs in the format that best serves our preservation needs at U of I, but the development of those models took so much more time and technical expertise than I will ever have as a librarian. That said, if we can identify these these parallel applications in better funded commercial spaces that have analogues to our materials, we can leverage them to create open source, scalable tools for digital processing and increase the efficiency and accuracy of our archival practices.
+My biggest take away from working on these tools is to seek out models working in parallel disciplines which may be much more well funded than the archives. I "developed" these tools so far as I implemented an infrastructure for different machine learning and neural network models to produce outputs in the format that best serves our preservation needs at U of I, but the development of those models took so much more time and technical expertise than I will ever have as a librarian. That said, if we can identify these these parallel applications in better funded commercial spaces that have analogues to our materials, we can leverage them to create open source, scalable tools for digital processing to increase the efficiency of our archival practices.
 
 <br>
 

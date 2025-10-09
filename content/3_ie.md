@@ -43,7 +43,7 @@ _Find the full script [here](https://github.com/Scholarly-Projects/image_extract
 
 <br>
 
-The design of this code is a little different than the previous tool, with simple, `human readable parameters` you can adjust depending on the general size of the photos in their collection, the number of photos within an image and the amount of margin around those images. The code identifies each photograph within the image placed in the A folder and generates a new derivative in the B folder where they are given sequential file names based on the parent item. The code is currently set up to give sequential files names by the position of each photograph in a clockwise rotation, but this can be configured to whatever you find intuitive.
+The design of this code is a little different than the previous tool, with simple, `human readable parameters` you can adjust depending on the general size of the photos in their collection, the number of photos within an image and the amount of margin around those images. The code identifies each photograph within the image placed in the A folder and generates a new derivative in the B folder where they are given sequential file names based on the parent item name. The code is currently set up to give sequential files names by the position of each photograph in a clockwise rotation, but this can be configured to whatever you find intuitive.
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>

@@ -43,7 +43,7 @@ Find the full script [here](https://github.com/Scholarly-Projects/edge_detector)
 
 <br>
 
-The tool implements a neural network called IS-Net, originally developed for a paper titled [“Highly Accurate Dichotomous Image Segmentation”](http://arxiv.org/abs/2203.03041) by [Xuebin Qin](https://github.com/xuebinqin/DIS) and others in 2022. The model executes fine grain, binary foreground/background segmentation and it is often used for isolating retail objects for online marketplaces. The model is completely open access, requiring the user to open and close sessions within the Python script to use, but not requiring a monetary API key. 
+The tool implements a neural network called IS-Net, originally developed for a paper titled [“Highly Accurate Dichotomous Image Segmentation”](http://arxiv.org/abs/2203.03041) by [Xuebin Qin](https://github.com/xuebinqin/DIS) and others in 2022. The model executes fine grain, binary foreground/background segmentation and was trained on/for isolating retail objects for online marketplaces. The model is completely open access, requiring the user to open and close sessions within the Python script to use, but not requiring a monetary API key. 
 
 <div class="symbol-container">
     <p class="symbol">&#10042;</p>
